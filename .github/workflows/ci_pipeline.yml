@@ -33,7 +33,15 @@ jobs:
         # Step B: Install LangChain & Tools (Layered on top)
         # We assume the risk of version mismatch to get it working
         pip install langchain langchain-community langgraph streamlit python-dotenv tabulate pytest pytest-timeout --prefer-binary
-
+    
+    - name: Debug File System
+      run: |
+        echo "Listing all files:"
+        ls -R
+        echo "--------------------------------"
+        echo "Content of test_agent.py:"
+        cat test_agent.py || echo "File not found!"
+        echo "--------------------------------"
     # 4. Run Tests (Injecting Secrets)
     - name: Run Tests
       env:
