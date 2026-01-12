@@ -1,8 +1,12 @@
 snowflake-snowpark-python
+snowflake-connector-python
+pandas
 streamlit
 langchain
 langchain-community
 langchain-snowflake
 langgraph
 python-dotenv
-pandas
+tabulate
+pytest
+pytest-timeout
