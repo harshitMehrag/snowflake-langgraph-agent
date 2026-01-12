@@ -1,0 +1,8 @@
+snowflake-snowpark-python
+streamlit
+langchain
+langchain-community
+langchain-snowflake
+langgraph
+python-dotenv
+pandas
